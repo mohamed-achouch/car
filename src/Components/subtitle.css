@@ -1,0 +1,62 @@
+.subtitle {
+  color: var(--main-dark);
+  text-align: center;
+  /* Body/Body 1 */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 43.2px */
+  text-transform: capitalize;
+  width: fit-content;
+  margin: 60px auto;
+  position: relative;
+}
+.subtitle::before {
+    display: block;
+    content: "";
+    background: #d3d5e0;
+    width: calc(464px / 2);
+    height: 1px;
+    top: 50%;
+    left: -242px;
+    position: absolute;
+}
+.subtitle::after {
+    display: block;
+    content: "";
+    background: #d3d5e0;
+    width: calc(464px / 2);
+    height: 1px;
+    top: 50%;
+    right: -242px;
+    position: absolute;
+}
+
+/*Mobile Device*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .subtitle::before,
+  .subtitle::after{
+  display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .subtitle::before,
+  .subtitle::after{
+  display: none;
+  }
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 769px) and (max-width: 991px) {
+  .subtitle::before,
+  .subtitle::after{
+  display: none;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+ 
+}
+@media (min-width: 1200px) {
+}

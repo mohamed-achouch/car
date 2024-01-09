@@ -1,0 +1,23 @@
+.brand {
+  padding-block: 65px;
+}
+.list_brands {
+  display: flex;
+  align-items: center;
+  gap: 49px;
+  width: fit-content;
+  justify-content: center;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+}
+.list_brands .brand {
+  display: flex;
+  width: 129.493px;
+  height: 129.493px;
+  padding: 12.61px 9.25px 8.185px 9.249px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 26.079px;
+}

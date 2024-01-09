@@ -1,0 +1,204 @@
+.service {
+  padding-top: 100px;
+}
+.service .container .parag {
+  color: var(--Gray-Gray-4, #666872);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  text-transform: capitalize;
+  width: fit-content;
+  margin: auto;
+}
+.list_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  margin-top: 60px;
+}
+.list_box .box {
+  border-radius: 15px;
+  background: var(--main-white, #fffffe);
+  box-shadow: 0px 30px 80px 0px rgba(0, 0, 0, 0.04);
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.box .title {
+  color: var(--main-dark, #100e34);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 180%;
+  text-transform: capitalize;
+}
+.box .desc {
+  color: var(--Gray-Gray-4, #666872);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  text-transform: capitalize;
+  width: 299px;
+}
+.service .content {
+  display: flex;
+  margin-top: 154px;
+  gap: -44px;
+  align-items: center;
+  overflow: hidden;
+}
+.service .content img {
+  width: 877px;
+  height: 411px;
+}
+.service .content .info {
+  z-index: -1;
+  width: calc(605px + 82px);
+  height: 467px;
+  margin-left: -44px;
+  flex-shrink: 0;
+  border-radius: 15px 0px 0px 15px;
+  background: var(--main-white, #fffffe);
+  box-shadow: 0px 30px 80px 0px rgba(0, 0, 0, 0.04);
+}
+.service .content .info div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 95px;
+}
+.service .content .info div h1 {
+  color: var(--main-dark, #100e34);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 180%;
+  text-transform: capitalize;
+}
+.service .content .info div p {
+  color: var(--Gray-Gray-4, #666872);
+  font-size: 16px;
+  width: 368px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 28.8px */
+  text-transform: capitalize;
+  margin-top: 36px;
+  margin-bottom: 81px;
+}
+@media (max-width: 991px) {
+  .content {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+/*Mobile Device*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .service .container .parag {
+    text-align: center;
+  }
+  .list_box {
+    flex-direction: column;
+  }
+  .service .content img {
+    width: 473px;
+    height: 274px;
+    border-radius: 19px;
+  }
+  .service .content img {
+    width: 368px;
+    height: 213px;
+    border-radius: 20px;
+  }
+  .service .content .info {
+    height: 216px;
+    width: 88%;
+    margin-left: 0px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: centerF;
+  }
+  .service .content .info div p {
+    margin-top: 3px;
+    margin-bottom: 34px;
+    width: fit-content;
+    text-align: center;
+    font-size: 14px;
+  }
+  .service .content .info div {
+    margin: 0px;
+    align-items: center;
+  }
+  .service .content .info div h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .service .container .parag {
+    text-align: center;
+  }
+  .list_box {
+    flex-direction: column;
+  }
+  .service .content img {
+    width: 542px;
+    height: 300px;
+  }
+  .service .content .info {
+    height: 278px;
+    margin-left: 0px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: centerF;
+  }
+  .service .content .info div p {
+    margin-top: 3px;
+    margin-bottom: 34px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 769px) and (max-width: 991px) {
+  .list_box {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .service .content img {
+    width: 542px;
+    height: 300px;
+  }
+  .service .content .info {
+    height: 278px;
+    margin-left: 0px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: centerF;
+  }
+  .service .content .info div p {
+    margin-top: 3px;
+    margin-bottom: 34px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .service .content img {
+    width: 542px;
+    height: 300px;
+  }
+  .service .content .info {
+    height: 360px;
+  }
+  .service .content .info div p {
+    margin-top: 3px;
+    margin-bottom: 34px;
+  }
+}
+@media (min-width: 1200px) {
+}

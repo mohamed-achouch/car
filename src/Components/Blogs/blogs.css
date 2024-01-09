@@ -1,0 +1,111 @@
+.list_blogs {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+.blogs{
+  padding-top: 100px;
+}
+.list_blogs .blog {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 375px;
+  justify-content: center;
+}
+.list_blogs .blog p {
+  border-radius: 15px;
+  background: var(--main-white, #fffffe);
+  box-shadow: 0px 30px 80px 0px rgba(0, 0, 0, 0.04);
+  padding: 20px;
+  color: var(--main-dark, #100e34);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  text-transform: capitalize;
+  margin-top: -30px;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 991px) {
+  .hero .container .buttons {
+    bottom: 0;
+    left: 50%;
+    flex-direction: row;
+    top: 100%;
+    bottom: 0;
+  }
+  .hero .container {
+    position: relative;
+  }
+  .hero .container .list_flesh {
+    width: 90%;
+    margin: auto;
+    left: 0;
+    justify-content: space-between;
+    padding-inline: 5%;
+    top: -449px;
+  }
+}
+/*Mobile Device*/
+@media (min-width: 320px) and (max-width: 480px) {
+.list_blogs {
+  flex-direction: column;
+  align-items: center;
+}
+.list_blogs .blog{
+  width: 322px;
+}
+.list_blogs .blog p{
+  font-size: 14px;
+  text-align: center;
+}
+}
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .list_blogs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .list_blogs .blog{
+    width: 322px;
+  }
+  .list_blogs .blog p{
+    font-size: 14px;
+    text-align: center;
+  }
+  }
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 769px) and (max-width: 991px) {
+  .list_blogs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .list_blogs .blog{
+    width: 280px;
+  }
+  .list_blogs .blog p{
+    font-size: 14px;
+    text-align: center;
+  }
+ 
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .list_blogs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+  }
+  .list_blogs .blog{
+    width: 300px;
+  }
+  .list_blogs .blog p{
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,176 @@
+.hero {
+  height: 452px;
+  padding-top: 200px;
+  position: relative;
+}
+.hero .container .flesh {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.hero .container .list_flesh {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: absolute;
+  right: 100px;
+  bottom: 0px;
+}
+.hero .container .list_flesh .disabled {
+  background-color: #69696945;
+  cursor: no-drop;
+  color: linen;
+  opacity: 1;
+}
+.hero .container .buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  right: 100px;
+  top: 50%;
+  transform: translate(50% - 50%);
+}
+.hero .container .buttons div {
+  width: 10.154px;
+  height: 10.154px;
+  background-color: #d3d5e0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.hero .buttons div.active {
+  background-color: var(--main-red);
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 991px) {
+  .hero .container .buttons {
+    bottom: 0;
+    left: 50%;
+    flex-direction: row;
+    top: 100%;
+    bottom: 0;
+  }
+  .hero .container {
+    position: relative;
+  }
+  .hero .container .list_flesh {
+    width: 90%;
+    margin: auto;
+    left: 0;
+    justify-content: space-between;
+    padding-inline: 5%;
+    top: -449px;
+  }
+}
+/*Mobile Device*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .cars img {
+    width: 298px;
+    height: 216px;
+  }
+  .hero .cars {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .cars h2 {
+    font-size: 28px;
+  }
+  .hero .cars .find_dream h1 {
+    font-size: 45px;
+  }
+  .cars .text span {
+    font-size: 100.396px;
+  }
+  .search {
+    flex-direction: column;
+  }
+  .search .search_box {
+    align-items: center;
+    justify-content: center;
+  }
+  .search .search_box select ,
+  .search .search_box span {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    background-color: transparent;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .search {
+    display: grid;
+    grid-template-columns: auto auto;
+   }
+  .cars img {
+    width: 476px;
+    height: 272px;
+  }
+  .hero .cars {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .cars h2 {
+    font-size: 36px;
+  }
+  .hero .cars .find_dream h1 {
+    font-size: 50px;
+  }
+  .cars .text span {
+    font-size: 154.396px;
+  }
+  .search .search_box {
+    align-items: center;
+    justify-content: center;
+  }
+  .search .search_box select ,
+  .search .search_box span {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    background-color: transparent;
+  }
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 769px) and (max-width: 991px) {
+  .cars img {
+    width: 605px;
+    height: 346px;
+  }
+ 
+  .search .search_box {
+    align-items: center;
+    justify-content: center;
+  }
+  .search .search_box select ,
+  .search .search_box span {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    background-color: transparent;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero .container .buttons {
+    top: 50%;
+  }
+  .cars img {
+    width: 605px;
+    height: 346px;
+  }
+}
+@media (min-width: 1200px) {
+}
